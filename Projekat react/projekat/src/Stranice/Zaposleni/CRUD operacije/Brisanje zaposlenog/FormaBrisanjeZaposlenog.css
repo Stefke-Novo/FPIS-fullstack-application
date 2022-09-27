@@ -1,0 +1,48 @@
+#FBZnaslov{
+    margin-inline: auto;
+    width: fit-content;
+}
+#FBZpretraga{
+    border:2px solid black;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-inline: 30px;
+}
+#FBZpretraga>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#FBZpretraga>div *,#FBZpretraga>h3{
+    text-align: center;
+}
+#FBZforma2{
+    border:2px solid black;
+    margin-inline: auto;
+    width: fit-content;
+    padding: 20px 40px 20px 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+}
+#FBZforma2>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#FBZforma2>div>button{
+    width: 30%;
+}
+#FBZporukaBrisanja{
+    border:2px solid black;
+    min-height: 30px;
+    font-size: larger;
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+#FKUSPnaslov{
+    margin-inline: auto;
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#FKUSPforma{
+    border:2px solid black;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: fit-content;
+    margin-inline: auto;
+    min-height: 300px;
+    height: 1000px;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#FKUSPgrupisano{
+    border:2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 20%;
+}
+#FKUSPgrupisano>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-inline: 30px;
+    height: 100%;
+}
+#FKUSPgrupisano>div>div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+#FKUSPgrupisano1{
+    height: 50%;
+    border:2px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#FKUSPgrupisano1>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#FKUSPgrupisano1>table,#FKUSPgrupisano1>table *{
+    border:2px solid black;
+}
+#FKUSPgrupisano1>table{
+    width: 90%;
+    height: 50%;
+}
+.ikonice{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+.teze{
+    text-align: center;
+}
+#FKUSPtezaUgovora{
+    border: 2px solid black;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-evenly;
+}
+#FKUSPtezaUgovora>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#FBUSodgovor{
+    text-align: center;
+    border:2px solid black;
+    margin-bottom: 100px;
+    min-height: 30px;
+}

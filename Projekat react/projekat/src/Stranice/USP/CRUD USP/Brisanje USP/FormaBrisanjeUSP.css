@@ -1,0 +1,46 @@
+#FBUSPnaslov{
+    margin-inline:auto;
+    width: fit-content;
+}
+#FBUSPforma{
+    border:2px solid black;
+    width: fit-content;
+    margin-inline:auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    padding-inline: 20px;
+    margin-top: 50px;
+}
+#FBUSPforma *{
+    width: fit-content;
+    margin-inline: auto;
+    width: 100%;
+    text-align: center;
+}
+#FBUSPforma>div{
+    display: flex;
+    flex-direction:column;
+}
+#FBUSPforma1 {
+    border:2px solid black;
+}
+#FBUSPforma1{
+    width: fit-content;
+    margin-inline:auto;
+    padding: 10px 20px 10px 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom:100px;
+}
+#FBUSPforma1>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#FBUSPforma1>div>button{
+    width: 30%;
+}

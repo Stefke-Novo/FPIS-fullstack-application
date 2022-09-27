@@ -1,0 +1,27 @@
+#FUUSPnaslov{
+    margin-inline: auto;
+    width: fit-content;
+}
+#FUUSPtabela{
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+#FUUSPtabela *{
+    border:2px solid black;
+}
+#FUUSPtabela>div>h1{
+    min-height: 30px;
+}
+#FUUSPtabela>div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: medium;
+}

@@ -1,0 +1,72 @@
+#FBPnaslov{
+    margin-inline:auto;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#FBPforma{
+    width: fit-content;
+    height: 100px;
+    padding-inline: 10px;
+    background-color: rgb(225, 140, 90);
+}
+#FBPforma>button{
+    width: fit-content;
+    margin-inline: 5px;
+    margin-inline: auto;
+}
+#FBPpodela{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#FBPpodela>div, #FBPpodela>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+#FBPpodela>div>div>h3,#FBPpodela>div>div>h4{
+    text-align: center;
+}
+#FBPpodela>div{
+    padding-inline: 20px;
+    height: 250px;
+    background-color: rgb(225, 140, 90);
+}
+#FBPpodela>div>button{
+    margin-left: auto;
+    margin-right: auto;
+}
+#FBPpodela>form>h3{
+    text-align: center;
+}
+.FBPBtn{
+    color: black;
+    background-color: rgb(225, 140, 90);
+    border: none;
+    border-radius: 20px;
+    transition:color,background-color 0.5s;
+    font-size: medium;
+    margin: 5px 2px 5px 2px ;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+}
+.FBPBtn:hover{
+    background-color: rgb(39, 39, 255);
+    color:white;
+}
+#FBPpodela>div>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#FBPodgovor{
+    border:2px solid black;
+    min-height: 20px;
+    text-align: center;
+    font-size: larger;
+}

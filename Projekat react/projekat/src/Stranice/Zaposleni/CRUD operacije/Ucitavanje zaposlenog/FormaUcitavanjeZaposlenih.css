@@ -1,0 +1,13 @@
+#FUZnaslov{
+    margin-inline:auto;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#FUZtabela , #FUZtabela *{
+    border:2px solid black;
+}
+#FUZtabela{
+    text-align: center;
+    margin-inline: auto;
+}

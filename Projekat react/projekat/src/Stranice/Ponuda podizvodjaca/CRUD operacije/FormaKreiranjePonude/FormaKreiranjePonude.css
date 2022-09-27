@@ -1,0 +1,53 @@
+#FKPnaslov{
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#FKPforma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-inline: auto;
+    width: fit-content;
+    justify-content: space-evenly;
+    background-color: rgb(223, 121, 61);
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.FKPformaOpcija{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-inline: 30px;
+    min-height: 45px;
+    justify-content: space-between;
+}
+.FKPformaOpcija input,.FKPformaOpcija label{
+    outline-style: none;
+    border: none;
+}
+#FKPformaBtn{
+    color: black;
+    background-color: rgb(225, 140, 90);
+    border: none;
+    border-radius: 20px;
+    transition:color,background-color 0.5s;
+    font-size: larger;
+    margin: 5px 2px 5px 2px ;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+}
+#FKPformaBtn:hover{
+    background-color: rgb(39, 39, 255);
+    color:white;
+}
+.FKPporuka{
+    border: 2px solid black;
+    min-height: 30px;
+    font-size: larger;
+    text-align: center;
+}
+

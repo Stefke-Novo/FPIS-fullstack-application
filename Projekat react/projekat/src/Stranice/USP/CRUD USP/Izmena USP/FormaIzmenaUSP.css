@@ -1,0 +1,102 @@
+#IUSPnaslov{
+    margin-inline: auto;
+    width: fit-content;
+}
+#IUSPforma{
+    border:2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    min-height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-inline: 20px;
+}
+#IUSPforma>h3{
+    width: fit-content;
+}
+#IUSPforma>div{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+#IUSPforma>div>label{
+    text-align: center;
+}
+#IUSPgrupisano1{
+    height: 60%;
+    border:2px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 370px;
+
+}
+#IUSPgrupisano1>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#IUSPgrupisano1>table,#IUSPgrupisano1>table *{
+    border:2px solid black;
+}
+#IUSPgrupisano1>table{
+    width: 90%;
+    min-height: 50%;
+}
+.ikonice{
+    height: 100%;  
+    text-align: center;  
+}
+.teze{
+    text-align: center;
+}
+#IUSPtezaUgovora{
+    border: 2px solid black;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-evenly;
+}
+#IUSPtezaUgovora>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#IUSPforma1{
+    margin-inline: auto;
+    width:fit-content;
+    border: 2px solid black;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-inline: 10px;
+}
+#body{
+    height: fit-content;
+}
+#IUSPbtn{
+    width: fit-content;
+    padding-inline: 10px;
+    margin-inline:auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#IUSPforma1{
+   margin-bottom: 30px;
+}
+#IUSPporuka{
+    border: 2px solid black;
+    min-height: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}

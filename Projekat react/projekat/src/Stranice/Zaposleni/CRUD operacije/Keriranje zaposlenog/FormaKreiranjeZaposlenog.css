@@ -1,0 +1,33 @@
+#FKZnslov{
+    margin-inline:auto;
+    width: fit-content;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+#FKZforma{
+    border: 2px solid black;
+    margin-inline: auto;
+    width: fit-content;
+    padding: 20px 40px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 200px;
+}
+#FKZforma>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#FKZforma>div label{
+    text-align: center;
+    width: 30%;
+}
+#FKZporuka{
+    border:2px solid black;
+    text-align: center;
+    font-size: larger;
+    min-height: 30px;
+    margin-top: 30px;
+}

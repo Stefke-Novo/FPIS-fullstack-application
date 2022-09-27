@@ -1,0 +1,55 @@
+#header{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+  }
+  #headerIcon{
+    max-height: 100px;
+    max-width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+  }
+  #headerIcon:hover{
+    transform: scale(1.1,1.1);
+  }
+  #headerIcon img{
+    height: 100%;
+    width: 100%;
+  }
+  #headerButtons{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .button{
+    font-size: larger;
+    line-height: 250%;
+    width: 25%;
+    min-width: fit-content;
+    border-radius: 30px;
+    transition-property: width,background-color,color;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    border-color: none;
+    border-style: none;
+    background-color: rgb(39, 39, 255);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    padding-inline: 10px 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  .button:hover{
+    width: 50%;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+  .button a{
+    text-decoration: none;
+    color: white;
+  }

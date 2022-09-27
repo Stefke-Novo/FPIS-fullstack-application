@@ -1,0 +1,61 @@
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\appsettings.Development.json
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\appsettings.json
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\API projekat.exe
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\API projekat.deps.json
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\API projekat.runtimeconfig.json
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\API projekat.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\API projekat.pdb
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.csproj.AssemblyReference.cache
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.GeneratedMSBuildEditorConfig.editorconfig
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.AssemblyInfoInputs.cache
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.AssemblyInfo.cs
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.csproj.CoreCompileInputs.cache
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.MvcApplicationPartsAssemblyInfo.cs
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.MvcApplicationPartsAssemblyInfo.cache
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\staticwebassets.build.json
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\staticwebassets.development.json
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\scopedcss\bundle\API projekat.styles.css
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.csproj.CopyComplete
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\refint\API projekat.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.pdb
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\API projekat.genruntimeconfig.cache
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\obj\Debug\net6.0\ref\API projekat.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Humanizer.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\FON\4. godina\2. semestar\FPIS - fizičko projektovanje informacionih sistema\Projekti\Projekat\API projekat\API projekat\API projekat\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
