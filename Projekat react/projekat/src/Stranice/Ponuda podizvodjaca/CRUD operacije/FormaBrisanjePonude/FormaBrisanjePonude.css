@@ -6,9 +6,18 @@
 }
 #FBPforma{
     width: fit-content;
-    height: 100px;
+    height: 200px;
     padding-inline: 10px;
     background-color: rgb(225, 140, 90);
+}
+#FBPforma>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#FBPforma>div>input{
+    border:none;
+    outline: none;
+    text-align: center;
 }
 #FBPforma>button{
     width: fit-content;
@@ -34,7 +43,6 @@
 }
 #FBPpodela>div{
     padding-inline: 20px;
-    height: 250px;
     background-color: rgb(225, 140, 90);
 }
 #FBPpodela>div>button{
@@ -65,8 +73,37 @@
     justify-content: space-evenly;
 }
 #FBPodgovor{
-    border:2px solid black;
     min-height: 20px;
     text-align: center;
-    font-size: larger;
+    font-size: medium;
+}
+#FBPstranica{
+    background-color: rgb(101, 206, 255);
+    background-image: url("https://images.unsplash.com/photo-1517917822086-6988b4ca9b31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHRyYXNoJTIwY2FufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60");
+    background-position: center;
+    background-size: contain;
+    height: 83vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+#FBPforma1Div{
+    display: flex;
+    background-color: rgb(255, 226, 183);
+    flex-direction: column;
+    text-align: center;
+    width: fit-content;
+    text-align: justify;
+    height: 200px;
+    margin-inline: auto;
+    padding-inline: 10px 10px ;
+    border-radius: 20px;
+}
+#FBPforma1Div>label{
+    background-color: white;
+    padding-inline: 10px 10px ;
+}
+#FBPforma1{
+    height: 300px;
+    
 }

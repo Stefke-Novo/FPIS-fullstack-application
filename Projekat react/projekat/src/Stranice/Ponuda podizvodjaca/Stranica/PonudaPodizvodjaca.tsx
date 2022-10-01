@@ -7,14 +7,14 @@ function PonudaPodizvodjaca(){
     let {path} = useRouteMatch();
     return(
         <div id='ponudaPodizvodjaca'>
-            <h1 id='naslov'>Ponuda podizvodjaca</h1>
+            {/* <h1 id='naslov'>Ponuda podizvodjaca</h1>
             <div id='PPOpcije'>
                 <h3>Opcije:</h3>
                 <div>
                     <Link to={`${path}/kreirajPonudu`}>Kreiranje</Link>
                     <Link to={`${path}/obrisiPonudu`}>Brisanje</Link>
                 </div>
-            </div>
+            </div> */}
             <Switch>
                 <Route path={`${path}/kreirajPonudu`} exact={true} component={FormaKreiranjePonude}/>
                 <Route path={`${path}/obrisiPonudu`} exact={true} component={FormaBrisanjePonude}/>

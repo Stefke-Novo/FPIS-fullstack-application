@@ -15,11 +15,11 @@ function FormaUcitavanjeZaposlenih(){
         setZaposleni(z1.ucitajZaposlene().zaposleni);
     },[]);
     return (
-        <div>
+        <div id="FUZstranica">
             <h1 id="FUZnaslov">Ucitavanje zaposlenih</h1>
             <table id="FUZtabela">
                 <thead>
-                    <tr>
+                    <tr className="red0">
                         <th>JMBG</th>
                         <th>Ime</th>
                         <th>Prezime</th>
@@ -28,8 +28,8 @@ function FormaUcitavanjeZaposlenih(){
                     </tr>
                 </thead>
                 <tbody>
-                    {zaposleni.map(zaposlen=>(
-                        <tr key={zaposlen.JMBG}>
+                    {zaposleni.map((zaposlen,i)=>(
+                        <tr key={zaposlen.JMBG} className={i%2==0?"red2":"red1"}>
                             <td>{zaposlen.JMBG}</td>
                             <td>{zaposlen.ime}</td>
                             <td>{zaposlen.prezime}</td>

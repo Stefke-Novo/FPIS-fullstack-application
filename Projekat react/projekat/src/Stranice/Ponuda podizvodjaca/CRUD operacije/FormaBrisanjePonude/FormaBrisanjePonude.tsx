@@ -30,7 +30,7 @@ function FormaBrisanjePonude(){
         setPporuka(odgovor.poruka);
     }
     return(
-        <div >
+        <div id='FBPstranica' >
             <h1 id='FBPnaslov'>Brisanje ponude</h1>
             <div id='FBPpodela'>
                 <form id='FBPforma'>
@@ -39,17 +39,23 @@ function FormaBrisanjePonude(){
                         <label htmlFor="">ID ponude :</label>
                         <input type="number" value={idPonude} onChange={(evt)=>setIdPonude(evt.target.value)}/>
                     </div>
+                    <h4 id='FBPodgovor'>{pporuka}</h4>
                     <button className='FBPBtn' onClick={(evt)=>{pretraziIDPonudePodizvodjaca(evt)}}>Pretrazi</button>
                 </form>
-                {pronadjeno&&(<div>
+                {pronadjeno&&(<div id='FBPforma1'>
                     <h2>Da li zelite da obrisete ponudu ?</h2>
+                    <div id='FBPforma1Div'>
+                        <label>ID ponude: {ponuda.idPonude}</label>
+                        <label>Naziv ponude: {ponuda.nazivPonude}</label>
+                        <label>Datum predaje: {ponuda.datumPredaje.toDateString()}</label>
+                        <label>Cena: {ponuda.cena}</label>
+                    </div>
                     <div>
                         <button className='FBPBtn' onClick={(evt)=>obrisiPonuduPodizvodjaca(evt)}>Da</button>
                         <button className='FBPBtn'>Ne</button>
                     </div>
                 </div>)}
             </div>
-            <h1 id='FBPodgovor'>{pporuka}</h1>
         </div>
     )
 }

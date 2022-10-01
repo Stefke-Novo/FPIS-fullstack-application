@@ -9,7 +9,7 @@ function Zaposleni(){
     let {path}=useRouteMatch();
     return(
         <div id='zaposleni'>
-            <h1 id='zaposleniNaslov'>Zaposleni</h1>
+            {/* <h1 id='zaposleniNaslov'>Zaposleni</h1>
             <div id='zaposleniOpcije'>
                 <h3>Opcije</h3>
                 <div>
@@ -18,9 +18,9 @@ function Zaposleni(){
                     <Link to={`${path}/izmenaZaposlenog`}>Izmena zaposlenog</Link>
                     <Link to={`${path}/brisanjeZaposlenog`}>Brisanje zaposlenog</Link>
                 </div>
-            </div>
+            </div> */}
             <Switch>
-                <Route path={`${path}/kreiranjeZaposlnog`} render={()=><FormaKreiranjeZaposlenog/>}/>
+                <Route path={`${path}/kreiranjeZaposlenog`} render={()=><FormaKreiranjeZaposlenog/>}/>
                 <Route path={`${path}/ucitavanjeZaposlenih`} render={()=><FormaUcitavanjeZaposlenih/>}/>
                 <Route path={`${path}/izmenaZaposlenog`} render={()=><FormaIzmenaZaposlenog/>}/>
                 <Route path={`${path}/brisanjeZaposlenog`} render={()=><FormaBrisanjeZaposlenog/>}/>

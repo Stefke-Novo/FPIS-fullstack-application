@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Children, useState } from 'react'
 import {Link} from 'react-router-dom'
 import './MainMenu.css'
 function MainMenu(){
+  let [sirina,setSirina]=useState<number>();
     return(
         <div id='header'>
           <Link to="/">
@@ -10,11 +11,57 @@ function MainMenu(){
             </div>
           </Link>
           <div id='headerButtons'>
-            <Link to='/ponudaPodizvodjaca' className='button'>Ponuda podizvodjaca</Link>
-            <Link to='/zaposleni' className='button'>Zaposleni</Link>
-            <Link to='/ugovorSaPodizvodjacem' className='button' >Ugovor sa podizvodjacem</Link>
+            <MenuButton link='/ponudaPodizvodjaca' tekst={"Ponuda podizvodjaca"}>
+              <DropdownMenu>
+                <DropdownItem link='/ponudaPodizvodjaca/kreirajPonudu'>Kreiranje ponude</DropdownItem>
+                <DropdownItem link='/ponudaPodizvodjaca/obrisiPonudu'>Brisanje ponude</DropdownItem>
+              </DropdownMenu>
+            </MenuButton>
+            <MenuButton link='/zaposleni' tekst='Zaposleni' 
+            // className='button'
+            >
+              <DropdownMenu>
+                <DropdownItem link={"/zaposleni/kreiranjeZaposlenog"}>Kreiranje zaposlenog</DropdownItem>
+                <DropdownItem link={"/zaposleni/ucitavanjeZaposlenih"}>Prikaz zaposlenog</DropdownItem>
+                <DropdownItem link={"/zaposleni/izmenaZaposlenog"}>Izmena zaposlenog</DropdownItem>
+                <DropdownItem link={"/zaposleni/brisanjeZaposlenog"}>Brisanje zaposlenog</DropdownItem>
+              </DropdownMenu>
+            </MenuButton>
+            <MenuButton link='/ugovorSaPodizvodjacem' tekst='Ugovor sa podizvodjacem'
+            // className='button' 
+            >
+              <DropdownMenu>
+                <DropdownItem link={"/ugovorSaPodizvodjacem/kreiranjeUSP"}>Kreiranje ugovora</DropdownItem>
+                <DropdownItem link={"/ugovorSaPodizvodjacem/ucitavanjeUSP"}>Prikaz ugovora</DropdownItem>
+                <DropdownItem link={"/ugovorSaPodizvodjacem/izmenaUSP"}>Izmena ugovora</DropdownItem>
+                <DropdownItem link={"/ugovorSaPodizvodjacem/brisanjeUSP"}>Brisanje ugovora</DropdownItem>
+              </DropdownMenu>
+            </MenuButton>
           </div>
         </div>
     )
 }
 export default MainMenu;
+function MenuButton(props:{link:string,tekst:string,children:any}){
+  //let [open,setOpen] = useState<boolean>(false);
+  return(
+    <div className='menuButton'>
+      <div className='button' 
+        // onClick={(evt)=>setOpen(!open)}
+        >{props.tekst}</div>
+      {props.children}
+    </div>
+  )
+}
+function DropdownMenu(props:any){
+  return(
+    <div className='dropdown'>
+      {props.children}
+    </div>
+  )
+}
+function DropdownItem(props:{link:string,children:any}){
+  return (
+    <Link to={props.link} className='dropDownItem'>{props.children}</Link>
+  )
+}

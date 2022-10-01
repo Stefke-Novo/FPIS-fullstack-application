@@ -29,7 +29,7 @@ function FormaKreiranjeZaposlenog() {
         setProvera(true);
     }
     return(
-        <div>
+        <div id="FKZstranica">
             <h1 id="FKZnslov">Kreiranje zaposlenog</h1>
             <div id="FKZforma">
                 <div >

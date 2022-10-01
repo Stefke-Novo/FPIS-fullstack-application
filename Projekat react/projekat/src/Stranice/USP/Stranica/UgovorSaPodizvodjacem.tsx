@@ -9,7 +9,7 @@ function UgovorSaPodizvodjacem(){
     let {path} = useRouteMatch();
     return(
         <div id="USP">
-            <h1 id="USPnaslov">Ugovor sa podizvodjacem</h1>
+            {/* <h1 id="USPnaslov">Ugovor sa podizvodjacem</h1>
             <div id="USPOpcije">
                 <h2>Opcije</h2>
                 <div>
@@ -18,7 +18,7 @@ function UgovorSaPodizvodjacem(){
                     <Link to={`${path}/ucitavanjeUSP`}>Ucitavanje ugovora sa podizvodjacem</Link>
                     <Link to={`${path}/brisanjeUSP`}>Brisanje ugovora sa podizvodjacem</Link>
                 </div>
-            </div>
+            </div> */}
             <Switch>
                 <Route path={`${path}/kreiranjeUSP`} render={()=><FormaKreiranjeUSP/>}/>
                 <Route path={`${path}/izmenaUSP`} render={()=><FormaIzmenaUSP/>}/>

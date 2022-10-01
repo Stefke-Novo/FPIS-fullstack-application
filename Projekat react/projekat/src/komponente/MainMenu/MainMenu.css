@@ -1,7 +1,7 @@
 #header{
-    background-color: lightblue;
     display: flex;
     justify-content: space-between;
+    background-color:rgb(43, 190, 253);
   }
   #headerIcon{
     max-height: 100px;
@@ -9,6 +9,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
   }
   #headerIcon:hover{
@@ -27,11 +28,11 @@
   .button{
     font-size: larger;
     line-height: 250%;
-    width: 25%;
+    width: 100%;
     min-width: fit-content;
     border-radius: 30px;
-    transition-property: width,background-color,color;
-    transition-duration: 0.7s;
+    transition-property: background-color,color;
+    transition-duration: 0.3s;
     transition-timing-function: ease-out;
     border-color: none;
     border-style: none;
@@ -44,7 +45,6 @@
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
   }
   .button:hover{
-    width: 50%;
     color: black;
     background-color: white;
     cursor: pointer;
@@ -52,4 +52,54 @@
   .button a{
     text-decoration: none;
     color: white;
+  }
+  .menuButton *{
+    text-decoration: none;
+    color: white;
+  }
+  .menuButton{
+    width: 25%;
+    min-width: fit-content;
+    transition-property: width;
+    transition-duration: 0.3s;
+    display: flex;
+    border-radius: 30px;
+  }
+  .menuButton:hover{
+    width:30%;
+  }
+  .dropdown{
+    position: absolute;
+    top: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width:20.75%; */
+    width: 18%;
+    z-index: 1;
+    opacity: 0;
+    height: 0%;
+    transition: 0.3s opacity , 0.3s height , 0.3s width;
+  }
+  .menuButton:hover>.dropdown{
+    opacity: 1;
+    width:20.75%;
+    height: 120px;
+  }
+  .dropDownItem{
+    background-color: rgb(39, 39, 255);
+    width: 100%;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 25px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    transition: 0.3s background-color, 0.3s color;
+    width: fit-content;
+    padding-inline: 10px;
+    min-width: 200px;
+  }
+  .dropDownItem:hover{
+    background-color: white;
+    color: black;
   }

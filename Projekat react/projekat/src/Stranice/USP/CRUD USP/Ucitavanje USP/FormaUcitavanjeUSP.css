@@ -1,6 +1,7 @@
 #FUUSPnaslov{
     margin-inline: auto;
     width: fit-content;
+    padding-top: 30px;
 }
 #FUUSPtabela{
     width: fit-content;
@@ -10,9 +11,6 @@
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-}
-#FUUSPtabela *{
-    border:2px solid black;
 }
 #FUUSPtabela>div>h1{
     min-height: 30px;
@@ -24,4 +22,30 @@
     margin-right: 10px;
     text-align: center;
     font-size: medium;
+}
+.boja1{
+    background-color: white;
+    color:black;
+}
+.boja2{
+    background-color: rgb(0, 140, 255);
+    color: white;
+}
+.boja3{
+    background-color: blue;
+    color: white;
+}
+#FUUSPstranica{
+    background-color: rgb(101, 206, 255);
+    height: 83vh;
+    background-image: url("https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.tabela{
+    border:5px solid rgb(131, 251, 255);
+    height: fit-content;
+    background-color: rgb(131, 251, 255);
 }

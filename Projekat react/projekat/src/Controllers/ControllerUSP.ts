@@ -8,7 +8,7 @@ export default class ControllerUSP{
     constructor(){
 
     }
-    public vratiSveUSP():{poruka:String,ugovori:Array<UgovorSaPodizvodjacem>}{
+    public vratiSveUSP():{poruka:string,ugovori:Array<UgovorSaPodizvodjacem>}{
         let ugovori:Array<UgovorSaPodizvodjacem>=[];
         let poruka:string="";
         $.ajax({
@@ -16,11 +16,12 @@ export default class ControllerUSP{
             url:"https://localhost:7075/UgovorSaPodizvodjacem/vratiSveUSP",
         }).done(function(data, textStatus, jqXHR){
             data.forEach((ugovor:{idusp:number,datumZakljucenja:Date,rokIzvrsenja:Date, 
-                teze:Array<{redniBroj: number,nazivTeze: String,opisTeze: String}>;
+                teze:Array<{redniBroj: number,nazivTeze: string,opisTeze: string}>;
             }) => {
                     let teze:Array<TezaUSP>=[];
-                    ugovor.teze.forEach((element:{redniBroj: number,nazivTeze: String,opisTeze: String}) => {
-                        teze.push(new TezaUSP(element.redniBroj,element.nazivTeze,element.opisTeze));
+                    ugovor.teze.forEach((element:any) => {
+                        console.log(element);
+                        teze.push(new TezaUSP(element.redniBroj,element.naziv,element.opis));
                     });
                     ugovori.push(new UgovorSaPodizvodjacem(ugovor.idusp,ugovor.datumZakljucenja,ugovor.rokIzvrsenja,teze));
                     poruka="Uspesno su ucitani ugovori";

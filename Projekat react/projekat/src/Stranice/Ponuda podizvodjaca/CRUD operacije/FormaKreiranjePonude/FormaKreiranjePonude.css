@@ -1,21 +1,22 @@
 #FKPnaslov{
     width: fit-content;
-    margin-inline: auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    color:aliceblue;
 }
 #FKPforma{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
-    margin-bottom: 100px;
-    margin-inline: auto;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5%;
     width: fit-content;
     justify-content: space-evenly;
-    background-color: rgb(223, 121, 61);
+    background-color: rgb(101, 206, 255);
     border-radius: 10px;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    background-image: url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
 }
 .FKPformaOpcija{
     display: flex;
@@ -26,17 +27,32 @@
     min-height: 45px;
     justify-content: space-between;
 }
+.FKPformaOpcija label{
+    color: white;
+}
 .FKPformaOpcija input,.FKPformaOpcija label{
     outline-style: none;
     border: none;
 }
+.FKPformaOpcija input{
+    border-bottom:2px solid white;
+    background-color: transparent;
+    transition: 0.3s background-color;
+}
+.FKPformaOpcija input:focus{
+    background-color: white;
+}
+.FKPformaOpcija label{
+    font-style: larger;
+}
 #FKPformaBtn{
     color: black;
-    background-color: rgb(225, 140, 90);
+    background-color: rgb(90, 189, 225);
     border: none;
     border-radius: 20px;
     transition:color,background-color 0.5s;
     font-size: larger;
+    padding: 10px 20px 10px 20px;
     margin: 5px 2px 5px 2px ;
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
 }
@@ -45,9 +61,25 @@
     color:white;
 }
 .FKPporuka{
-    border: 2px solid black;
-    min-height: 30px;
-    font-size: larger;
+    line-height: 30px;
     text-align: center;
+    background-color: rgb(255, 72, 72);
+    border-radius: 30px;
+    padding-inline: 20px 20px;
 }
-
+#FKPstranica{
+    background-size:contain;
+    height:83.2vh;
+    background-position:left;
+    background-repeat:no-repeat;
+    background-color:rgb(111, 212, 255);
+    display: flex;
+    justify-content: space-between;
+}
+#FKPforma1{
+    width: 59%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}

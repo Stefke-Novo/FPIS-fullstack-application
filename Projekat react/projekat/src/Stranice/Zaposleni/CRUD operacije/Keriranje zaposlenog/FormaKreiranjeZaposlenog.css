@@ -3,9 +3,9 @@
     width: fit-content;
     margin-top: 50px;
     margin-bottom: 30px;
+    color: white;
 }
 #FKZforma{
-    border: 2px solid black;
     margin-inline: auto;
     width: fit-content;
     padding: 20px 40px 20px 40px;
@@ -14,6 +14,9 @@
     justify-content: space-evenly;
     flex-direction: column;
     height: 200px;
+    background-color: rgba(217, 255, 0, 0.304);
+    font-size: large;
+    height: 50%;
 }
 #FKZforma>div{
     display: flex;
@@ -23,11 +26,61 @@
 #FKZforma>div label{
     text-align: center;
     width: 30%;
+    font-weight: bolder;
+}
+#FKZforma>div input{
+    text-align: center;
+    border:none;
+    background-color: transparent;
+    outline:none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s background-color;
+}
+#FKZforma>div input:focus{
+    background-color: white;
 }
 #FKZporuka{
-    border:2px solid black;
     text-align: center;
     font-size: larger;
-    min-height: 30px;
+    line-height: 30px;
     margin-top: 30px;
+    width: fit-content;
+    margin-inline: auto;
+    background-color: rgba(255, 0, 0, 1);
+    border-radius: 20px;
+    border:5px solid white;
+    padding-inline: 20px 20px;
+}
+#FKZstranica{
+    background-image: url("https://images.unsplash.com/photo-1500058504985-a3bbdb0a7781?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-position: center;
+    height: 83vh;
+    background-repeat: no-repeat;
+    background-color: rgb(101, 206, 255);
+}
+#FKZforma select{
+    outline: none;
+    width: 190px;
+    border: none;
+}
+#FKZforma select,#FKZforma option{
+    font-size: medium;
+}
+#FKZforma button{
+    background-color: white;
+    color: black;
+    border:none;
+    transition: 0.3s color , 0.3s background-color;
+    height: 30px;
+    font-size: large; 
+    padding-inline: 20px 20px;
+    border-radius: 20px;
+}
+#FKZforma button:hover{
+    background-color: blue;
+    color: white;
 }

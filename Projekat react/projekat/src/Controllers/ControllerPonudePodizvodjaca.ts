@@ -33,7 +33,7 @@ export default class ControllerPonudePodizvodjaca{
             data:{"p":p},
         }).done(function(data, textStatus, jqXHR) {
             odgovor.proslo=true;
-            odgovor.poruka={idPonude:data.iDponude,nazivPonude:data.nazivPounde,datumPredaje:data.datumPredaje,cena:data.cena};
+            odgovor.poruka={idPonude:data.iDponude,nazivPonude:data.nazivPonude,datumPredaje:data.datumPredaje,cena:data.cena};
             console.log(data);
           }).fail(function(jqXHR, textStatus, errorThrown ) {
             odgovor.proslo=false;
