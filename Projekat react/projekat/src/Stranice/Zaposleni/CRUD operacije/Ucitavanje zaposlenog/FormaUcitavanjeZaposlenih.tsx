@@ -16,29 +16,31 @@ function FormaUcitavanjeZaposlenih(){
     },[]);
     return (
         <div id="FUZstranica">
-            <h1 id="FUZnaslov">Ucitavanje zaposlenih</h1>
-            <table id="FUZtabela">
-                <thead>
-                    <tr className="red0">
-                        <th>JMBG</th>
-                        <th>Ime</th>
-                        <th>Prezime</th>
-                        <th>Pozicija</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {zaposleni.map((zaposlen,i)=>(
-                        <tr key={zaposlen.JMBG} className={i%2==0?"red2":"red1"}>
-                            <td>{zaposlen.JMBG}</td>
-                            <td>{zaposlen.ime}</td>
-                            <td>{zaposlen.prezime}</td>
-                            <td>{zaposlen.pozicija}</td>
-                            <td>{zaposlen.status}</td>
+            <h1 id="FUZnaslov">Zaposleni</h1>
+            <div>
+                <table id="FUZtabela">
+                    <thead>
+                        <tr className="red">
+                            <th>JMBG</th>
+                            <th>Ime</th>
+                            <th>Prezime</th>
+                            <th>Pozicija</th>
+                            <th>Status</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {zaposleni.map((zaposlen,i)=>(
+                            <tr key={zaposlen.JMBG} className={i%2==0?"red":"red"}>
+                                <td>{zaposlen.JMBG}</td>
+                                <td>{zaposlen.ime}</td>
+                                <td>{zaposlen.prezime}</td>
+                                <td>{zaposlen.pozicija}</td>
+                                <td>{zaposlen.status}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

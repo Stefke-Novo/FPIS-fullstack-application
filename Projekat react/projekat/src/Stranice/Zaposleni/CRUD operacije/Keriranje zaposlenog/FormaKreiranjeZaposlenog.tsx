@@ -30,8 +30,8 @@ function FormaKreiranjeZaposlenog() {
     }
     return(
         <div id="FKZstranica">
-            <h1 id="FKZnslov">Kreiranje zaposlenog</h1>
             <div id="FKZforma">
+            <h1 id="FKZnaslov">Zaposleni</h1>
                 <div >
                     <label htmlFor="">JMBG</label>
                     <input type="number" value={JMBG} onChange={(evt)=>{setJMBG(evt.target.value)}} />
@@ -49,14 +49,14 @@ function FormaKreiranjeZaposlenog() {
                     <input type="text" value={pozicija} onChange={(evt)=>setPozicija(evt.target.value)}/>
                 </div>
                 <div>
-                    <label htmlFor="">Stauts</label>
+                    <label htmlFor="">Status</label>
                     <select name="firma" id="firma" value={status} onChange={(evt)=>setStatus(evt.target.value)}>
                         <option value="Jeste na radnom mestu">Jeste na radnom mestu</option>
                         <option value="Nije na radnom mestu">Nije na radnom mestu</option>
                         <option value="Nije u firmi">NIje u firmi</option>
                     </select>
                 </div>
-                <button onClick={(evt)=>kreirajZaposlenog(evt)}>Kreiraj zaposlenog</button>
+                <button onClick={(evt)=>kreirajZaposlenog(evt)}>Unesi</button>
             </div>
             <h1 id="FKZporuka">{poruka}</h1>
         </div>

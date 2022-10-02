@@ -1,9 +1,11 @@
 #FBZnaslov{
     margin-inline: auto;
     width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
 }
 #FBZpretraga{
-    border:2px solid black;
     width: fit-content;
     margin-inline: auto;
     margin-top: 30px;
@@ -13,6 +15,30 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-inline: 30px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
+}
+#FBZpretraga>h3{
+    font-size: 25px;
+}
+#FBZpretraga label, #FBZforma2 label{
+    font-size: 23px;
+}
+#FBZpretraga input, #FBZforma2 input{
+    width:200px;
+    text-align: center;
+    font-weight: bolder;
+    outline: none;
+    border:none;
+    height: 25px;
+    background-color: rgba(202,240,248,0.7);
+    margin-inline: auto;
+}
+#FBZpretraga, #FBZforma2 {
+    height: 80%;
+    width: 30%;
+    text-align: center;
 }
 #FBZpretraga>div{
     display: flex;
@@ -23,26 +49,67 @@
     text-align: center;
 }
 #FBZforma2{
-    border:2px solid black;
     margin-inline: auto;
-    width: fit-content;
     padding: 20px 40px 20px 40px;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 150px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
+}
+#FBZpretraga input{
+    font-size: 18px;
 }
 #FBZforma2>div{
     display: flex;
     justify-content: space-evenly;
 }
-#FBZforma2>div>button{
-    width: 30%;
+#FBZforma2>div>button,#FBZpretraga>button{
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    width: fit-content;
+    margin-inline: auto;
+    color: #0077B6;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
 }
 #FBZporukaBrisanja{
-    border:2px solid black;
-    min-height: 30px;
     font-size: larger;
     text-align: center;
+}
+#FBZstranica{
+    height: 62vh;
+    background-color: #fffaf0;
+}
+#FBZpodela{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+#FBZforma2Info{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    background-color: #CAF0F8;
+    width: fit-content;
+    text-align: justify;
+    min-height: 200px;
+    margin-inline: auto;
+    padding-inline: 10px 10px ;
+    border-radius: 20px;
+}
+#FBZforma2Info label{
+    background-color: white;
+    padding-inline: 10px 10px ;
 }

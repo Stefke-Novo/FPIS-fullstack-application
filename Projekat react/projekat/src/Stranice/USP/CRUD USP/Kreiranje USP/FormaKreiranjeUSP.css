@@ -1,28 +1,27 @@
 #FKUSPnaslov{
     margin-inline: auto;
-    width: fit-content;
-    margin-top: 40px;
+    width: max-content;
     margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+    color:#0077B6;
 }
 #FKUSPforma{
-    border:2px solid black;
     display: flex;
-    align-items:center;
-    flex-direction: column;
     width: fit-content;
     margin-inline: auto;
-    min-height: 300px;
-    height: 1000px;
+    height: fit-content;
     justify-content: space-evenly;
-    margin-bottom: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 100%;
+}
+#FKUSPforma>div{
+    width: 33%;
 }
 #FKUSPgrupisano{
-    border:2px solid black;
     display: flex;
     justify-content: space-evenly;
-    height: 20%;
+    /* height: 30%; */
+    height: 150px;
 }
 #FKUSPgrupisano>div{
     display: flex;
@@ -40,13 +39,18 @@
     height: 50%;
 }
 #FKUSPgrupisano1{
-    height: 50%;
-    border:2px solid black;
-    width: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
+    min-height: 500px;
+}
+#FKUSPgrupisano1Div{
+    max-height: 500px;
+    overflow: auto;
+    max-width: 33%;
 }
 #FKUSPgrupisano1>div{
     display: flex;
@@ -61,7 +65,7 @@
     width: 90%;
     height: 50%;
 }
-.ikonice{
+.ikonice1{
     display: flex;
     justify-content: center;
     height: 100%;
@@ -71,12 +75,11 @@
     text-align: center;
 }
 #FKUSPtezaUgovora{
-    border: 2px solid black;
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
-    min-height: 200px;
+    min-height: 250px;
     justify-content: space-evenly;
 }
 #FKUSPtezaUgovora>div{
@@ -84,9 +87,93 @@
     flex-direction: column;
     align-items: center;
 }
+#FKUSPtezaUgovora textarea{
+    height: 100px;
+    width: 400px;
+    text-align: start;
+    padding-top: 1%;
+}
 #FBUSodgovor{
     text-align: center;
     border:2px solid black;
     margin-bottom: 100px;
     min-height: 30px;
+}
+#FKUSstranica{
+    background-color: #fffaf0;
+    color:#0077B6;
+}
+#FKUSstranica label{
+    font-size: 25px;
+}
+#FKUSstranica input{
+    width:150px;
+    text-align: center;
+}
+#FKUSstranica h2{
+    font-size: 23px
+}
+#slika{
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/08/04/21/filler-2294342_960_720.jpg");
+    min-height: 500px;
+    max-width: 33%;
+    display: flex;
+    align-items: flex-end;
+    /* background-repeat: no-repeat; */
+    /* background-size: 500px 100%; */
+}
+#FKUSPformaLevo{
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 33%;
+}
+#FKUSPformaLevo>h2{
+    text-align: center;
+}
+#FKUSstranica button{
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    width: fit-content;
+    margin-inline: auto;
+    color: #0077B6;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+}
+#FKUSPtezaUgovora,#FKUSPgrupisano1, #FKUSPgrupisano{
+    background-color: #caf0f8;
+    border-radius: 20px;
+}
+#FKUSPtezaUgovora input, #FKUSPtezaUgovora textarea,#FKUSPgrupisano1 input, #FKUSPgrupisano input{
+    outline: none;
+    border:none;
+    background-color: transparent;
+    border-bottom: 3px solid white;
+    font-size: 18px;
+}
+#FKUSPtezaUgovora textarea{
+    background-color: rgba(255,255,255,0.5);
+}
+#FKUSPgrupisano1{
+    overflow: auto;
+}
+#FKUSPgrupisano1 input{
+    margin-bottom: 10px;
+}
+#FKUSPgrupisano1 label{
+    margin-top: 10px;
+}
+#FKUSPgrupisano1>h2{
+    margin-top: 30px;
 }

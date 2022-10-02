@@ -27,25 +27,27 @@ function FormaBrisanjeUSP(){
         console.log(u1.izbrisiUgovor(ugovor,zaposleni,ponuda));
     }
     return(
-        <div>
+        <div id="FBUSPstranica">
             <h1 id="FBUSPnaslov">Brisanje ugovora sa podizvodjacem</h1>
-            <div id="FBUSPforma">
-                <h3>Pretraga ugovora sa podizvodjacem</h3>
-                <div>
-                    <label htmlFor="">ID ugovora sa podizvodjacem</label>
-                    <input type="number" value={idPretraga} onChange={(evt)=>setIdPretraga(+evt.target.value)}/>
-                    <small >{porukaPretrage}</small>
+            <div id="FBUSPpodela">
+                <div id="FBUSPforma">
+                    <h3>Pretraga ugovora sa podizvodjacem</h3>
+                    <div>
+                        <label htmlFor="">ID ugovora sa podizvodjacem</label>
+                        <input type="number" value={idPretraga} onChange={(evt)=>setIdPretraga(+evt.target.value)}/>
+                        <small >{porukaPretrage}</small>
+                    </div>
+                    <button onClick={(evt)=>pretraziUgovor(evt)}>Pretrazi</button>
                 </div>
-                <button onClick={(evt)=>pretraziUgovor(evt)}>Pretrazi</button>
-            </div>
-            <div id="FBUSPforma1">
-                <label htmlFor="">Da li zelite da izbrisete ugovor ?</label>
-                <div>
-                    <button onClick={(evt)=>izbrisiUgovor(evt)}>Da</button>
-                    <button>Ne</button>
+                <div id="FBUSPforma1">
+                    <label htmlFor="">Da li zelite da izbrisete ugovor ?</label>
+                    <div>
+                        <button onClick={(evt)=>izbrisiUgovor(evt)}>Da</button>
+                        <button>Ne</button>
+                    </div>
+                    <h1 id="FBUSPodgovor">{odgovor}</h1>
                 </div>
             </div>
-            <h1 id="FBUSodgovor">{odgovor}</h1>
         </div>
     )
 }

@@ -1,9 +1,9 @@
 #FIZnaslov{
+    padding-top: 20px;
     margin-inline:auto;
     width: fit-content;
 }
 #FIZforma{
-    border: 2px solid black;
     margin-inline: auto;
     width: fit-content;
     padding: 20px 40px 20px 40px;
@@ -12,7 +12,6 @@
     justify-content: space-evenly;
     flex-direction: column;
     height: 200px;
-    margin-bottom: 100px;
 }
 #FIZforma>div{
     display: flex;
@@ -24,7 +23,6 @@
     width: 30%;
 }
 #FIZpretraga{
-    border:2px solid black;
     width: fit-content;
     margin-inline: auto;
     margin-top: 30px;
@@ -44,7 +42,71 @@
     text-align: center;
 }
 #FIZporukaIzmene{
-    border:2px solid black;
     min-height: 30px;
     text-align: center;
+}
+#FIZstranica{
+    background-image: url("https://images.pexels.com/photos/3760072/pexels-photo-3760072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+#FIZstranica>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90%;
+}
+#FIZstranica>div>div{
+    height: 60%;
+    width: 25%;
+}
+#FIZstranica h3{
+    font-size: 25px;
+}
+#FIZstranica label{
+    font-size: 23px;
+}
+#FIZstranica input{
+    height: 25px;
+    background-color: rgba(202,240,248,0.7);
+    font-size: 18px;
+}
+#FIZstranica input[type=number]::-webkit-inner-spin-button,
+#FIZstranica input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+}
+#FIZpretraga , #FIZforma{
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
+}
+#FIZstranica input, #FIZstranica select{
+    width:200px;
+    text-align: center;
+    font-weight: bolder;
+    outline: none;
+    border:none;
+}
+#FIZstranica button{
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    width: fit-content;
+    margin-inline: auto;
+    color: #0077B6;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+}
+#FIZpretraga input{
+    margin-inline: auto;
 }

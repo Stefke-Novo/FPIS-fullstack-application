@@ -24,10 +24,14 @@ function FormaUcitavanjeUSP(){
             {ugovorip.map((ugovor: UgovorSaPodizvodjacem, i: number) => {
                 return (
                     <div key={i} className="tabela">
-                        <h3 className="boja1">ID ugovora: {ugovor.IDUSP}</h3>
+                        <h3 
+                            className="boja1"
+                        >ID ugovora: {ugovor.IDUSP}</h3>
                         <table>
                             <thead>
-                                <tr className="boja3">
+                                <tr 
+                                    className="boja"
+                                >
                                     <th>Redni broj teze</th>
                                     <th>Naziv teze</th>
                                     <th>Opis teze</th>
@@ -36,7 +40,9 @@ function FormaUcitavanjeUSP(){
                             <tbody>
                                 {ugovor.teze.map((teza: TezaUSP, i: number) => {
                                     return (
-                                        <tr key={i} className={i%2==0?"boja1":"boja2"}>
+                                        <tr key={i} 
+                                         className="boja"
+                                        >
                                             <td className="teze">{i + 1}</td>
                                             <td className="teze">{teza.naziv}</td>
                                             <td className="teze">{teza.opis}</td>

@@ -64,82 +64,89 @@ function FormaKreiranjeUSP() {
         u1.kreirajNoviUgovor(zapos,ponud,ugovor);
     }
     return(
-        <div>
-            <h1 id="FKUSPnaslov">Kreiranje ugovora sa podizvodjacem</h1>
+        <div id="FKUSstranica">
             <div id="FKUSPforma">
-                <h2>Nalazenje ponude i zaposlenog</h2>
-                <div id="FKUSPgrupisano">
-                    <div>
+                <div id="FKUSPformaLevo">
+                    <h2>Nalazenje ponude i zaposlenog</h2>
+                    <div id="FKUSPgrupisano">
                         <div>
-                            <label htmlFor="">Ponuda podizvodjaca</label>
-                            <input type="number" value={IDponude} onChange={(evt)=>setIDponude(+evt.target.value)}/>
-                            <small>{porukaPonude}</small>
+                            <div>
+                                <label htmlFor="">Ponuda</label>
+                                <input type="number" value={IDponude} onChange={(evt)=>setIDponude(+evt.target.value)}/>
+                                <small>{porukaPonude}</small>
+                            </div>
+                            <button onClick={(evt)=>ukljuciPonudu(evt)}>Ukljuci ponudu podizvodjaca u ugovor</button>
                         </div>
-                        <button onClick={(evt)=>ukljuciPonudu(evt)}>Ukljuci ponudu podizvodjaca u ugovor</button>
-                    </div>
-                    <div>
                         <div>
-                            <label htmlFor="">Zaposleni</label>
-                            <input type="number" value={IDzaposlenog} onChange={(evt)=>setIDzaposlenog(+evt.target.value)}/>
-                            <small>{porukaZaposlenog}</small>
+                            <div>
+                                <label htmlFor="">Zaposleni</label>
+                                <input type="number" value={IDzaposlenog} onChange={(evt)=>setIDzaposlenog(+evt.target.value)}/>
+                                <small>{porukaZaposlenog}</small>
+                            </div>
+                            <button onClick={(evt)=>ukljuciZaposlenog(evt)}>Ukljuci zaposlenog u ugovor</button>
                         </div>
-                        <button onClick={(evt)=>ukljuciZaposlenog(evt)}>Ukljuci zaposlenog u ugovor</button>
+                    </div>
+                    <div id="FKUSPtezaUgovora">
+                        <h2>Teza ugovora</h2>
+                        <div>
+                            <label htmlFor="">Naziv stavke</label>
+                            <input type="text" 
+                            value={nazivTeze}
+                            onChange={(evt)=>{setNazivTeze(evt.target.value)}} 
+                            />
+                        </div>
+                        <div>
+                            <label htmlFor="">Opis stavke (sadrzaj stavke)</label>
+                            <textarea 
+                            value={opisTeze}
+                            onChange={(evt)=>{setOpisTeze(evt.target.value)}}
+                            />
+                        </div>
+                        <button onClick={(evt)=>{dodajTezu(evt)}}>Dodaj tezu ugovora</button>
                     </div>
                 </div>
-                <div>
-                    <label htmlFor="">ID ugovora</label>
-                    <input type="number" value={ugovor.IDUSP} onChange={(evt)=>setUgovor({...ugovor,IDUSP:+evt.target.value})} />
+                <div id="slika">
+                    <h1 id="FKUSPnaslov">Kreiranje ugovora sa podizvodjacem</h1>
                 </div>
-                <div id="FKUSPtezaUgovora">
-                    <h3>Teza ugovora</h3>
-                    <div>
-                        <label htmlFor="">Naziv stavke</label>
-                        <input type="text" 
-                        value={nazivTeze}
-                        onChange={(evt)=>{setNazivTeze(evt.target.value)}} 
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="">Opis stavke (sadrzaj stavke)</label>
-                        <textarea 
-                        value={opisTeze}
-                        onChange={(evt)=>{setOpisTeze(evt.target.value)}}
-                        />
-                    </div>
-                    <button onClick={(evt)=>{dodajTezu(evt)}}>Dodaj tezu ugovora</button>
-                </div>
-                <div id="FKUSPgrupisano1">
-                    <div>
-                        <label htmlFor="">Rok izvrsenja</label>
-                        <input type="date" />
-                    </div>
-                    <div>
-                        <label htmlFor="">Datum zakljucenja</label>
-                        <input type="date" />
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Redni broj teze</th>
-                                <th>Naziv teze</th>
-                                <th>Opis teze</th>
-                                <th>Izbaci tezu</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {ugovor.teze.map((teza,i)=>{
-                                return(
-                                <tr key={i}>
-                                    <td className="teze">{i+1}</td>
-                                    <td className="teze">{teza.naziv}</td>
-                                    <td className="teze">{teza.opis}</td>
-                                    <td className="ikonice"><BiTrash size="2rem" onClick={(evt)=>{obrisiTezu(evt,teza);}}/></td>
+                <div id="FKUSPgrupisano1Div">
+                    <div id="FKUSPgrupisano1">
+                        <h2>Ugovor</h2>
+                        <div>
+                            <label htmlFor="">ID ugovora</label>
+                            <input type="number" value={ugovor.IDUSP} onChange={(evt)=>setUgovor({...ugovor,IDUSP:+evt.target.value})} />
+                        </div>
+                        <div>
+                            <label htmlFor="">Rok izvrsenja</label>
+                            <input type="date" />
+                        </div>
+                        <div>
+                            <label htmlFor="">Datum zakljucenja</label>
+                            <input type="date" />
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Redni broj teze</th>
+                                    <th>Naziv teze</th>
+                                    <th>Opis teze</th>
+                                    <th>Izbaci tezu</th>
                                 </tr>
-                            )})}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                {ugovor.teze.map((teza,i)=>{
+                                    return(
+                                    <tr key={i}>
+                                        <td className="teze">{i+1}</td>
+                                        <td className="teze">{teza.naziv}</td>
+                                        <td className="teze">{teza.opis}</td>
+                                        <td className="ikonice1"><BiTrash size="2rem" onClick={(evt)=>{obrisiTezu(evt,teza);}}/></td>
+                                    </tr>
+                                )})}
+                            </tbody>
+                        </table>
+                        <button onClick={(evt)=>kreiranjeNovogUgovora(evt)}>Kreiraj novi ugovor</button>
+                    </div>
                 </div>
-                <button onClick={(evt)=>kreiranjeNovogUgovora(evt)}>Kreiraj novi ugovor</button>
             </div>
         </div>
     )

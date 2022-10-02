@@ -16,6 +16,17 @@ function App() {
         <Route path="/zaposleni" exact={false} render={()=><Zaposleni/>}/>
         <Route path="/ugovorSaPodizvodjacem" exact={false} render={()=><UgovorSaPodizvodjacem/>}/>
       </Switch>
+      <footer id='footer'>
+        <ul>
+          <li>O kompaniji</li>
+          <li>Reference</li>
+          <li>Partneri</li>
+          <li>Karijera</li>
+        </ul>
+        <div>
+          <img src="https://elektromontaza.rs/wp-content/uploads/2019/06/Elektromonta%C5%BEa-logo.png" alt="" />
+        </div>
+      </footer>
     </>
   );
 }

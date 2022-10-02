@@ -1,0 +1,22 @@
+#MainNaslov{
+    color: #0077B6;
+    font-size: 60px;
+    position: absolute;
+    right: 50%;
+    top: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+#MainPasus{
+    position: absolute;
+    right: 50%;
+    top: 280px;
+    font-size: 25px;
+    width: 32%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#mainDiv{
+    display: flex;
+    height: fit-content;
+}

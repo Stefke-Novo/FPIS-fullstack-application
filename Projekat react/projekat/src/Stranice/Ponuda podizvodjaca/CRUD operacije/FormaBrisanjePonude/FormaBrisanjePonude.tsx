@@ -30,11 +30,10 @@ function FormaBrisanjePonude(){
         setPporuka(odgovor.poruka);
     }
     return(
-        <div id='FBPstranica' >
-            <h1 id='FBPnaslov'>Brisanje ponude</h1>
+        <div id='FBPstranica' style={{backgroundImage:"url(/iStock-490880575.jpg)"}} >
             <div id='FBPpodela'>
                 <form id='FBPforma'>
-                    <h3>Pretraga</h3>
+                    <h3>Da li ponuda postoji u sistemu ?</h3>
                     <div>
                         <label htmlFor="">ID ponude :</label>
                         <input type="number" value={idPonude} onChange={(evt)=>setIdPonude(evt.target.value)}/>

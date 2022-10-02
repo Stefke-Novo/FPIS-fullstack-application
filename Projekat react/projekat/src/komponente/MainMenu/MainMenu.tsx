@@ -11,7 +11,7 @@ function MainMenu(){
             </div>
           </Link>
           <div id='headerButtons'>
-            <MenuButton link='/ponudaPodizvodjaca' tekst={"Ponuda podizvodjaca"}>
+            <MenuButton link='/ponudaPodizvodjaca' tekst={"Ponude"}>
               <DropdownMenu>
                 <DropdownItem link='/ponudaPodizvodjaca/kreirajPonudu'>Kreiranje ponude</DropdownItem>
                 <DropdownItem link='/ponudaPodizvodjaca/obrisiPonudu'>Brisanje ponude</DropdownItem>
@@ -27,7 +27,7 @@ function MainMenu(){
                 <DropdownItem link={"/zaposleni/brisanjeZaposlenog"}>Brisanje zaposlenog</DropdownItem>
               </DropdownMenu>
             </MenuButton>
-            <MenuButton link='/ugovorSaPodizvodjacem' tekst='Ugovor sa podizvodjacem'
+            <MenuButton link='/ugovorSaPodizvodjacem' tekst='Ugovori'
             // className='button' 
             >
               <DropdownMenu>
@@ -37,6 +37,7 @@ function MainMenu(){
                 <DropdownItem link={"/ugovorSaPodizvodjacem/brisanjeUSP"}>Brisanje ugovora</DropdownItem>
               </DropdownMenu>
             </MenuButton>
+            <MenuButton link={''} tekst={'Kontakt'} children={undefined}></MenuButton>
           </div>
         </div>
     )

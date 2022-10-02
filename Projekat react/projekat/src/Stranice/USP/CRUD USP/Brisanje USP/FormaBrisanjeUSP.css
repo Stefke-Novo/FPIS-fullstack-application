@@ -1,12 +1,12 @@
 #FBUSPnaslov{
     margin-inline:auto;
     width: fit-content;
+    padding-top: 30px;
 }
 #FBUSPforma{
-    border:2px solid black;
     width: fit-content;
     margin-inline:auto;
-    height: 150px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -24,23 +24,62 @@
     display: flex;
     flex-direction:column;
 }
-#FBUSPforma1 {
-    border:2px solid black;
+#FBUSPforma h3{
+    font-size: 25px;
 }
-#FBUSPforma1{
+#FBUSPforma label , #FBUSPforma1 label{
+    font-size: 23px;
+}
+#FBUSPforma input{
+    outline:none;
+    border:none;
+    background-color: rgba(202,240,248,0.7);
+    font-size: 18px;
+    width: 70%;
+}
+#FBUSPforma, #FBUSPforma1{
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
+    height: 200px;
+}
+#FBUSPforma1 {
     width: fit-content;
     margin-inline:auto;
     padding: 10px 20px 10px 20px;
-    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom:100px;
 }
 #FBUSPforma1>div{
     display: flex;
     justify-content: space-evenly;
 }
-#FBUSPforma1>div>button{
-    width: 30%;
+#FBUSPforma1>div>button,#FBUSPforma button{
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    width: fit-content;
+    margin-inline: auto;
+    color: #0077B6;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+}
+#FBUSPpodela{
+    display: flex;
+    align-items: center;
+    height: 53vh;
+}
+#FBUSPodgovor{
+    font-size: 23px;
+}
+#FBUSPstranica{
+    background-color: #fffaf0;
 }

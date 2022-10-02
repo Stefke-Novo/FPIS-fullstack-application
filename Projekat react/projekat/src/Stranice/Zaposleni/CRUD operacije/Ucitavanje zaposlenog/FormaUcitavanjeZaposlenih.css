@@ -6,13 +6,15 @@
 }
 #FUZtabela{
     text-align: center;
-    margin-inline: auto;
+    margin-inline: 40px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 80%;
     font-size: large;
-    margin-bottom: 200px;
+    border-collapse: collapse;
 }
-td,th,tr{
-    height: 35px;
+td,th{
+    padding: 20px 30px 20px 30px;
 }
 .red1{
     background-color: rgb(0, 119, 255);
@@ -28,13 +30,26 @@ td,th,tr{
     color: black;
 }
 #FUZstranica{
-    background-image: url("https://images.unsplash.com/photo-1573496130103-a442a3754d0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
-    height: 83vh;
+    min-height: 83vh;
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: rgb(101, 206, 255);
+    background-color: #fffaf0;
+}
+.red{
+    border-bottom: 0.2px solid rgba(0,0,0,0.5);
+}
+#FUZstranica>div{
+    height: fit-content;
+    width: fit-content;
+    margin-bottom: 200px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
 }

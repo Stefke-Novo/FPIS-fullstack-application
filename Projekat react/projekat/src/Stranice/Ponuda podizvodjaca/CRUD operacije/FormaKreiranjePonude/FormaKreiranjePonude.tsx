@@ -45,11 +45,10 @@ function FormaKreiranjePonude(){
     }
     return(
         <div id='FKPstranica' style={{backgroundImage:"url(/pocetna-pozadinska-slika.jpg)"}}>
-            <div id='FKPforma1'>
-                <h1 id='FKPnaslov'>Kreiranje ponude</h1>
-                <Calendar onChange={onChange} value={value} />
-            </div>
+            {/* <div id='FKPforma1'> */}
+            {/* </div> */}
             <form id='FKPforma'>
+            <h1 id='FKPnaslov'>Nova ponuda</h1>
             <div className='FKPformaOpcija'>
                     <label htmlFor="naziv">ID ponude</label>
                     <input type="number" name='naziv' value={idPonude} onChange={(evt)=>setIdPonude(+evt.target.value)}></input>
@@ -66,7 +65,7 @@ function FormaKreiranjePonude(){
                     <label htmlFor="cena">Cena</label>
                     <input type="number" name='cena' value={cena} onChange={(evt)=>setCena(+evt.target.value)}></input>
                 </div>
-                <button id='FKPformaBtn' onClick={(evt)=>{kreirajPonudu(evt);}}>Kreiraj ponudu</button>
+                <button id='FKPformaBtn' onClick={(evt)=>{kreirajPonudu(evt);}}>POTVRDI</button>
                 <PorukeGUI/>
             </form>
             

@@ -1,9 +1,10 @@
 #IUSPnaslov{
     margin-inline: auto;
     width: fit-content;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #IUSPforma{
-    border:2px solid black;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -11,24 +12,62 @@
     width: fit-content;
     margin-inline: auto;
     min-height: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
     padding-inline: 20px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
+    height: 45%;
 }
 #IUSPforma>h3{
     width: fit-content;
+    font-size: 25px;
 }
 #IUSPforma>div{
     width: fit-content;
     display: flex;
     flex-direction: column;
 }
-#IUSPforma>div>label{
+#IUSPforma>div>label,#IUSPforma1 label{
     text-align: center;
+    font-size: 23px;
+}
+#IUSPforma>div>input, #IUSPtezaUgovora input,#IUSPforma1 input {
+    text-align: center;
+    height: 25px;
+    background-color: rgba(202,240,248,0.7);
+    font-size: 18px;
+    border: none;
+    outline:none;
+}
+#IUSPtezaUgovora textarea{
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    background-color: rgba(202,240,248,0.7);
+    font-size: 18px;
+    border: none;
+    outline:none;
+}
+#IUSPforma>button , #IUSPtezaUgovora button{
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 5px 10px;
+    width: 100px;
+    font-family: 'Roboto', sans-serif;
+    width: fit-content;
+    margin-inline: auto;
+    color: #0077B6;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
 }
 #IUSPgrupisano1{
     height: 60%;
-    border:2px solid black;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -58,45 +97,86 @@
     text-align: center;
 }
 #IUSPtezaUgovora{
-    border: 2px solid black;
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
     min-height: 200px;
     justify-content: space-evenly;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
+    height: 45%;
 }
 #IUSPtezaUgovora>div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+#IUSPtezaUgovora h3{
+    font-size: 25px;
+}
+#IUSPtezaUgovora label{
+    font-size: 23px;
+}
+
 #IUSPforma1{
-    margin-inline: auto;
     width:fit-content;
-    border: 2px solid black;
-    min-height: 600px;
+    min-height: 450px;
+    height: fit-content;
+    margin-inline: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-inline: 10px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgb(0 0 0 / 40%);
 }
 #body{
     height: fit-content;
 }
 #IUSPbtn{
     width: fit-content;
-    padding-inline: 10px;
     margin-inline:auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+    padding: 5px 10px 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #0077B6;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
 }
 #IUSPforma1{
    margin-bottom: 30px;
 }
 #IUSPporuka{
-    border: 2px solid black;
-    min-height: 30px;
     text-align: center;
-    margin-bottom: 100px;
+}
+#IUSPlevo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#IUSPpodela{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 500px;
+}
+#IUSPdesno{
+    overflow: auto;
+    width:35%;
+    max-height: 500px;
+}
+#IUSPstranica{
+    background-color: #fffaf0;
 }
