@@ -19,4 +19,8 @@
 #mainDiv{
     display: flex;
     height: fit-content;
+
+}
+#mainDiv video{
+    max-width: 100%;
 }
