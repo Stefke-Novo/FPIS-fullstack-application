@@ -75,11 +75,12 @@
 #FBUSPpodela{
     display: flex;
     align-items: center;
-    height: 53vh;
+    height: 100%;
 }
 #FBUSPodgovor{
     font-size: 23px;
 }
 #FBUSPstranica{
     background-color: #fffaf0;
+    height: 71.2vh;
 }

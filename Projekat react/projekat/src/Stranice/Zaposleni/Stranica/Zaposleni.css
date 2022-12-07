@@ -1,3 +1,6 @@
+#zaposleni{
+    min-height: 71.2vh;
+}
 #zaposleniNaslov{
     width: fit-content;
     margin-inline: auto;

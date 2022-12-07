@@ -43,7 +43,6 @@
     text-align: center;
 }
 .FKPformaOpcija input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
     margin: 0;
 }
 .FKPformaOpcija input:focus{
@@ -81,7 +80,7 @@
 }
 #FKPstranica{
     background-size:cover;
-    height:83.2vh;
+    height:100%;
     background-position:left;
     background-repeat:no-repeat;
     background-color:rgb(111, 212, 255);

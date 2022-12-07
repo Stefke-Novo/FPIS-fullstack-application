@@ -1,0 +1,7 @@
+#root{
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

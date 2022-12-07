@@ -41,3 +41,6 @@
 #USPOpcije>div>a:hover{
     background-color: rgb(94, 164, 255);
 }
+#USP{
+    min-height: 71.2vh;
+}

@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using System.Collections.ObjectModel;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace API_projekat.Data
 {
@@ -169,7 +171,7 @@ namespace API_projekat.Data
                 ugovor.Teze = context.teze.Where(t => t.IDUSP == ugovor.IDUSP).ToList();
                 ugovor.Zaposleni = context.Zaposleni.First(z => z.JMBG == ugovor.JMBG);
                 ugovor.Ponuda = context.PonudePodizvodjaca.First(p => p.IDponude == ugovor.IDponude);
-                return context.Ugovori.First(u => u.IDUSP == IDUSP);
+                return ugovor;
             }
             return null ;
         }
@@ -257,7 +259,7 @@ namespace API_projekat.Data
                 UgovorSaPodizvodjacem ugovor1 = context.Ugovori.First(u => u.IDUSP == ugovor.IDUSP && u.IDponude == ugovor.IDponude && u.JMBG == ugovor.JMBG);
                 ugovor1.DatumZakljucenja = ugovor.DatumZakljucenja;
                 ugovor1.RokIzvrsenja = ugovor.RokIzvrsenja;
-                List<TezaUSP> teze1=(context.teze.Where(t => t.JMBG == ugovor.JMBG & t.IDponude == ugovor.IDponude & t.IDUSP == ugovor.IDUSP)).ToList();
+                List<TezaUSP> teze1 = (context.teze.Where(t => t.JMBG == ugovor.JMBG & t.IDponude == ugovor.IDponude & t.IDUSP == ugovor.IDUSP)).ToList();
                 if (ugovor.Teze.Count > ugovor1.Teze.Count)
                     foreach (TezaUSP teza in ugovor.Teze)
                     {
@@ -280,7 +282,7 @@ namespace API_projekat.Data
                 else
                 {
                     int i = 0;
-                    while (i<teze1.Count)
+                    while (i < teze1.Count)
                     {
                         TezaUSP teza = teze1.ElementAt(i);
                         if (ugovor.Teze.Any(t => ugovor.JMBG == teza.JMBG & ugovor.IDponude == teza.IDponude & ugovor.IDUSP == teza.IDUSP & t.RedniBroj == teza.RedniBroj))
@@ -298,7 +300,46 @@ namespace API_projekat.Data
                     }
                 }
                 context.Update(ugovor1);
-                context.Entry(ugovor1).State=EntityState.Modified;
+                context.Entry(ugovor1).State = EntityState.Modified;
+                //List<TezaUSP> teze = ugovor.Teze.ToList();
+                //ugovor.Teze = null;
+                //context.Update(ugovor);
+                //ICollection<TezaUSP> teze1 = (context.teze.Where(t => t.JMBG == ugovor.JMBG & t.IDponude == ugovor.IDponude & t.IDUSP == ugovor.IDUSP)).ToList();
+                //ICollection<TezaUSP> dodavanje = (teze.Where(t => !context.teze.Any(t1 => t1.JMBG == t.JMBG & t1.IDponude == t.IDponude & t1.IDUSP == t.IDUSP & t.RedniBroj == t1.RedniBroj))).ToList();
+                //ICollection<TezaUSP> menjanje = (teze.Where(t => context.teze.Any(t1 => t1.JMBG == t.JMBG & t1.IDponude == t.IDponude & t1.IDUSP == t.IDUSP & t.RedniBroj == t1.RedniBroj))).ToList();
+                //ICollection<TezaUSP> brisanje = (teze1.Where(t => !teze.Any(t1 => t.RedniBroj==t1.RedniBroj))).ToList();
+                //foreach(TezaUSP teza in dodavanje)
+                //{
+                //    teza.IDUSP = ugovor.IDUSP;
+                //    teza.IDponude = ugovor.IDponude;
+                //    teza.JMBG = ugovor.JMBG;
+                //}
+                //foreach (TezaUSP teza in menjanje)
+                //{
+                //    teza.IDUSP = ugovor.IDUSP;
+                //    teza.IDponude = ugovor.IDponude;
+                //    teza.JMBG = ugovor.JMBG;
+                //}
+
+                //if (dodavanje.Count > 0 && dodavanje.ElementAt(0).IDUSP > 0)
+                //{
+
+                //    foreach(TezaUSP teza in dodavanje)
+                //    {
+                //        context.Entry(teza).State = EntityState.Detached;
+                //        context.Set<TezaUSP>().Update(teza);
+                //    }
+                //}
+                //if (menjanje.Count > 0 && menjanje.ElementAt(0).RedniBroj > 0)
+                //{
+                //    context.teze.UpdateRange(menjanje);
+                //    context.Entry(menjanje).State = EntityState.Modified;
+                //}
+                //if (brisanje.Count > 0 && brisanje.ElementAt(0).IDUSP > 0)
+                //{
+                //    context.teze.RemoveRange(brisanje);
+                //    context.Entry(brisanje).State = EntityState.Deleted;
+                //}
                 context.SaveChanges(true);
                 return "Ugovor je uspesno izmenjen";
             }catch(Exception e)
@@ -306,7 +347,7 @@ namespace API_projekat.Data
                 context.SaveChanges(false);
                 return "Desila se greska";
             }
-            return "Desila se greska";
+            
         }
     }
 }

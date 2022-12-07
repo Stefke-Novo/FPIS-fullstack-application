@@ -7,12 +7,14 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 #footer{
-    min-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #90E0EF;
     height: 150px;
+    
 }
 #footer>ul{
     list-style: none;

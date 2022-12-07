@@ -16,11 +16,13 @@
 #FIZforma>div{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: fit-content;
+    align-items: stretch;
 }
 #FIZforma>div label{
     text-align: center;
     width: 30%;
+    
 }
 #FIZpretraga{
     width: fit-content;

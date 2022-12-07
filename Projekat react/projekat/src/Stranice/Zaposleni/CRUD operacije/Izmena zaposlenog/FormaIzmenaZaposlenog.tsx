@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ControllerZaposleni from "../../../../Controllers/ControllerZaposleni";
 import { Zaposleni } from "../../../../Klase/Zaposleni";
 import './FormaIzmenaZaposlenog.css';
+// import Swal from 'sweetalert2';
+// import 'sweetalert2/src/sweetalert2.scss'
 function FormaIzmenaZaposlenog(){
     let z1:ControllerZaposleni = new ControllerZaposleni();
     let [JMBGpretraga,setJMBGpretraga]=useState("");
@@ -61,7 +63,7 @@ function FormaIzmenaZaposlenog(){
                     <button onClick={(evt)=>izmeniZaposlenog(evt)}>Izmeni zaposlenog</button>
                 </div>
             </div>
-            {/* <h1 id="FIZporukaIzmene">{porukaIzmene}</h1> */}
+            <h1 id="FIZporukaIzmene">{porukaIzmene}</h1>
         </div>
     )
 }

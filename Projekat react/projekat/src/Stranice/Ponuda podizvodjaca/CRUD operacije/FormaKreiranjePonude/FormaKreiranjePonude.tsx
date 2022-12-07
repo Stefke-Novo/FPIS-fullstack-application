@@ -2,8 +2,9 @@ import React, { SyntheticEvent, useEffect, useState } from 'react';
 import PonudaPodizvodjaca from '../../../../Klase/PonudaPodizvodjaca';
 import ControllerPonudePodizvodjaca from '../../../../Controllers/ControllerPonudePodizvodjaca';
 import './FormaKreiranjePonude.css';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css'
+import 'react-calendar/dist/Calendar.css';
+
+
 function FormaKreiranjePonude(){
     let p1 = new ControllerPonudePodizvodjaca();
     let [idPonude,setIdPonude]=useState<number>(0);

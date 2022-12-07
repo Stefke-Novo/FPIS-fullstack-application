@@ -51,6 +51,7 @@
     border-radius: 20px;
     padding: 20px 30px 20px 30px;
     width: 40%;
+    min-width: fit-content;
 }
 .tabela>table{
     border-collapse: collapse;

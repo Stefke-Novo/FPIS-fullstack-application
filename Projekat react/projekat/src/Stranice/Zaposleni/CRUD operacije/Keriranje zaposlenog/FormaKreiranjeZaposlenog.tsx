@@ -53,7 +53,7 @@ function FormaKreiranjeZaposlenog() {
                     <select name="firma" id="firma" value={status} onChange={(evt)=>setStatus(evt.target.value)}>
                         <option value="Jeste na radnom mestu">Jeste na radnom mestu</option>
                         <option value="Nije na radnom mestu">Nije na radnom mestu</option>
-                        <option value="Nije u firmi">NIje u firmi</option>
+                        <option value="Nije u firmi">Nije u firmi</option>
                     </select>
                 </div>
                 <button onClick={(evt)=>kreirajZaposlenog(evt)}>Unesi</button>

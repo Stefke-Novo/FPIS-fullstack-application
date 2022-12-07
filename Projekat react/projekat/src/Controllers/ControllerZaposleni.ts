@@ -56,7 +56,7 @@ export default class ControllerZaposleni{
             console.log("uspesna izmena zaposlenog");
             poruka=data;
         }).fail(function(jqXHR, textStatus, errorThrown){
-            console.log("neuspena izmena zaposlenog");
+            console.log("neuspesna izmena zaposlenog");
             poruka=errorThrown.toString();
         });
         return {poruka:poruka};

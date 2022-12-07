@@ -10,7 +10,7 @@
     display: flex;
     width: fit-content;
     margin-inline: auto;
-    height: fit-content;
+    height: 100%;
     justify-content: space-evenly;
     max-width: 100%;
 }
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: space-evenly;
     /* height: 30%; */
-    height: 150px;
+    height: fit-content;
 }
 #FKUSPgrupisano>div{
     display: flex;
@@ -40,17 +40,25 @@
 }
 #FKUSPgrupisano1{
     height: fit-content;
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    min-height: 500px;
+    height: 500px;
+    
 }
 #FKUSPgrupisano1Div{
     max-height: 500px;
     overflow: auto;
     max-width: 33%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    height: fit-content;
+}
+#FKUSPgrupisano1>h2{
+    text-align: center;
 }
 #FKUSPgrupisano1>div{
     display: flex;
@@ -58,10 +66,10 @@
     align-items: center;
     justify-content: space-evenly;
 }
-#FKUSPgrupisano1>table,#FKUSPgrupisano1>table *{
+#FKUSPgrupisano1>div>table,#FKUSPgrupisano1>div>table *{
     border:2px solid black;
 }
-#FKUSPgrupisano1>table{
+#FKUSPgrupisano1>div>table{
     width: 90%;
     height: 50%;
 }
@@ -100,6 +108,7 @@
     min-height: 30px;
 }
 #FKUSstranica{
+    height: 71.2vh;
     background-color: #fffaf0;
     color:#0077B6;
 }
@@ -115,19 +124,23 @@
 }
 #slika{
     background-image: url("https://cdn.pixabay.com/photo/2017/05/08/04/21/filler-2294342_960_720.jpg");
-    min-height: 500px;
+    height: 500px;
     max-width: 33%;
     display: flex;
     align-items: flex-end;
     /* background-repeat: no-repeat; */
     /* background-size: 500px 100%; */
+    margin-top: auto;
+    margin-bottom: auto;
 }
 #FKUSPformaLevo{
-    min-height: 500px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     max-width: 33%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 #FKUSPformaLevo>h2{
     text-align: center;

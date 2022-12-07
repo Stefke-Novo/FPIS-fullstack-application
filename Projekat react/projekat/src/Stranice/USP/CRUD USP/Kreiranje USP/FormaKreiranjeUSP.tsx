@@ -123,6 +123,7 @@ function FormaKreiranjeUSP() {
                             <label htmlFor="">Datum zakljucenja</label>
                             <input type="date" />
                         </div>
+                        <div>
                         <table>
                             <thead>
                                 <tr>
@@ -145,6 +146,7 @@ function FormaKreiranjeUSP() {
                             </tbody>
                         </table>
                         <button onClick={(evt)=>kreiranjeNovogUgovora(evt)}>Kreiraj novi ugovor</button>
+                        </div>
                     </div>
                 </div>
             </div>
